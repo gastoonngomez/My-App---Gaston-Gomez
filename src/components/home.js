@@ -1,13 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import  Navbarmenu from './components/navbar.js';
 
 
-function App(){
+function Hola(){
 
     return(
-<div>
+        <div>
         <h1>Hola, esto es Home</h1>
-        </div>)
+        </div>
+    )
 }
+
+
+  export default Hola;

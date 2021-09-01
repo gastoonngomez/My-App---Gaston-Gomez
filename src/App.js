@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import  Navbarmenu from './components/navbar.js';
-
+import CartWidget from './components/CartWidget';
+import ItemListContainer from './components/ItemListContainer';
 
 
 
@@ -19,8 +20,13 @@ import  Navbarmenu from './components/navbar.js';
 function App() {
 
   return(  
+    <div>
 <Navbarmenu />
-  
+<ItemListContainer />
+
+</div>
+
+
   );
 }
 
