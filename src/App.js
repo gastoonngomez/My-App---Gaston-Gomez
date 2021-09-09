@@ -1,43 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import  Navbarmenu from './components/navbar.js';
-import CartWidget from './components/CartWidget';
 import ItemListContainer from './components/ItemListContainer';
-
-
-
- 
-//const style = {
-  //backgroundColor:'red',
-  //color: 'blue',
-  //fontSize:'301',
-  //textAlign:'center'
-
-//}
-
+import ItemCount from './components/ItemCount'
 
 function App() {
-
-  return(  
+  return (
     <div>
-<Navbarmenu />
-<ItemListContainer />
-
-</div>
-
-
+   <ItemListContainer greeting='hola saludos' />
+   
+   </div>
   );
 }
-
-function World(){
-  return <div style={{ }}>
-  Hello World!
-  
-</div>
-  
-}
-
-
 
 export default App;

@@ -1,22 +1,24 @@
-const titulo = 'bienvenidos'
-const subtitulo = 'desafio 4'
+
+import React from 'react';
+import ItemCount from './ItemCount'
 
 
+function ItemListContainer({greeting}){
 
-function ItemListContainer() {
 
+   const onAdd = (count)=>{
+
+    console.log(count)
+   } 
     return(
-
-        <div> 
-
-<h1>{titulo}</h1>
-
-
-<p>{subtitulo}</p>
-        
-        
-        </div>
+        <div>
+            
+    <h1>{greeting}</h1>
+    <ItemCount stock={5} initial={1} onAdd={onAdd}/>
+    </div>
+    
     )
 }
+
 
 export default ItemListContainer;
